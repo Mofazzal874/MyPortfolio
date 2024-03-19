@@ -64,7 +64,7 @@
             include '../include/config.php';
 
             // Fetch message information
-            $messagesQuery = "SELECT message_id, person_name, person_mail, message FROM messages";
+            $messagesQuery = "SELECT message_id, person_name, person_mail,person_message FROM messages";
             $messagesResult = $con->query($messagesQuery);
 
             if ($messagesResult && $messagesResult->num_rows > 0) {
@@ -75,7 +75,7 @@
                     echo "<td><input type='checkbox' name='selected_messages[]' value='" . $row['message_id'] . "'></td>";
                     echo "<td>" . $row['person_name'] . "</td>";
                     echo "<td>" . $row['person_mail'] . "</td>";
-                    echo "<td>" . $row['message'] . "</td>";
+                    echo "<td>" . $row['person_message'] . "</td>";
                     echo "<td><button type='submit' class='btn delete-btn' name='delete_message' value='" . $row['message_id'] . "'>Delete</button></td>";
                     echo "</tr>";
                 }

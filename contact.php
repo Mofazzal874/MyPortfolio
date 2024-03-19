@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = isset($_POST['message']) ? $_POST['message'] : '';
 
     // Insert data into the database
-    $sql = "INSERT INTO messages (person_name, person_mail, message) VALUES ('$name', '$email', '$message')";
+    $sql = "INSERT INTO messages (person_name, person_mail,person_message) VALUES ('$name', '$email', '$message')";
 
     if ($con->query($sql) === TRUE) {
         echo "<script>alert('Message sent successfully!');</script>";

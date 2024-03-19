@@ -543,18 +543,18 @@ mysqli_close($con);
                     <form action="contact.php" method= "post" class="contact__form">
 
                         <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Name</label>
+                            <label for="name" class="contact__form-tag">Name</label>
                             <input type="text" name = "name" placeholder="Insert you name" class="contact__form-input">
                         </div>
 
                         <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Mail</label>
+                            <label for="email" class="contact__form-tag">Mail</label>
                             <input type="email" name = "email" placeholder="Insert your email" class="contact__form-input">
                         </div>
 
                         <div class="contact__form-div contact__form-area">
-                            <label for="" class="contact__form-tag">Message/Suggestion</label>
-                            <textarea name="" id="" cols="30" rows="10" name = "message" placeholder="Write your Message/Suggestion here..."
+                            <label for="message" class="contact__form-tag">Message/Suggestion</label>
+                            <textarea  id="" cols="30" rows="10" name = "message" placeholder="Write your Message/Suggestion here..."
                                 class="contact__form-input"></textarea>
                         </div>
 
